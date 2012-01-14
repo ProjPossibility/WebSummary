@@ -1,0 +1,12 @@
+Web-Based Social Stories Template Creator
+
+Summary
+
+A Social Stories Template Creator Website for Teachers to help children with Autism
+Description
+
+ Children who are autistic tend to have difficulty understanding social situations. Teachers create narrative “social stories” to teach children about social situations. For example, a story about going to the mall could help teach a student about proper behavior at a mall. Currently, when a student requires such a social story, teachers write up a quick paragraph on the fly and read the paragraph to the child.
+Requirements
+
+1.       Text editor that could efficiently template stories for re use. Think Mad-libs.
+2.       Keep track of which story is told to which student.
