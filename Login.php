@@ -14,15 +14,26 @@
 <h1> Students: </h1>
 
 <div id="logon">
-<form name="input" action="StudentView.php" method="get"> Full
-name: <input name="Name" value="Enter your name here" type="text">
-  <input value="Submit" type="submit"></form>
+    <form name="input" action="StudentView.php" method="get">
+        Full Name: <input name="Name" value="" type="text">
+        <input value="Submit" type="submit">
+    </form>
 </div>
+
 <h1> Teachers: </h1>
+
 <div id="logon">
+    
+    <FORM ACTION="passwordcheck.php" METHOD=POST>
+        password: <INPUT TYPE="PASSWORD" NAME="mypassword">
+        <INPUT TYPE=SUBMIT VALUE="submit">
+    </FORM>
+    
+<!--
 <form name="input" action="passwordcheck.php" method="get">
     <input name="Password" value="Enter your password" type="text">
   <input value="Submit" type="submit"></form>
+-->
 </div>
 
 </body></html>
