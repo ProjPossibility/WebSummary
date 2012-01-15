@@ -12,12 +12,12 @@
 <?php
 
 include("functions.php");
-if(!isset($_GET['Name']))
+if(!isset($_GET['student']))
 {
 	echo "The data from the login page was not accessed correctly. Please see line 16 in the source";
 }
 //add the student to the DB (every time unfortunately)
-addStudent($_GET['Name']);
+addStudent($_GET['student']);
 //echo $_POST['student'];
 //var_dump($_GET);
 
