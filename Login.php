@@ -11,7 +11,9 @@
 </head>
 
 <body>
-<h1> Students: </h1>
+<h1> Welcome to Integrated Learning Systems! </h1>
+<hr style="width: 100%; height: 2px;">
+<h2> Students: </h2>
 
 <div id="logon">
 <form name="input" action="StudentMenu.php" method="get"> Full
@@ -21,7 +23,7 @@ name: <input name="student" type="text">
 
 
 
-<h1> Teachers: </h1>
+<h3> Teachers: </h3>
 
 <div id="logon">
     

@@ -5,6 +5,10 @@
         <title>Student: Write your story!</title>
         
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        
+        <style type="text/css">
+            body {background-image:url("Background.png");}
+        </style>
     </head>
     
     <body>
