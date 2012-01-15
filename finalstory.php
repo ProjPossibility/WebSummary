@@ -37,7 +37,17 @@ echo $test[$i];
 
 ?>
 
-</div>
+</div><br/>
+<h1> Retry </h1>
+<?php
+		?>
+        <form name="input" action="StudentMenu.php" method="get">
+            <input value="Student Menu" type="submit">
+			
+			<input type="hidden" name="student" value="<?php
+			echo $_POST['student'];
+			?>">
+        </form>
 
 </body>
 </html>
