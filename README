@@ -10,3 +10,6 @@ Requirements
 
 1.       Text editor that could efficiently template stories for re use. Think Mad-libs.
 2.       Keep track of which story is told to which student.
+
+http://us.php.net/ <-- this is the site that contains php info, libraries, etc.
+http://us.php.net/manual/en/getting-started.php <-- this has a beginning tutorial and such
