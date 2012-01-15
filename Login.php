@@ -13,21 +13,13 @@
 <body>
 <h1> Students: </h1>
 
-<<<<<<< HEAD
-<form name="input" action="StudentMenu.php" method="get"> Full
-name: <input name="student" value="Enter your name here" type="text"> <br>
-  <input value="Submit" type="submit"></form>
-
-<h1> Teachers: </h1>
-
-<form name="input" action="html_form_action.asp" method="post"> <input name="Password" value="Enter your password" type="text"> <br>
-=======
 <div id="logon">
-    <form name="input" action="StudentView.php" method="get">
-        Full Name: <input name="Name" value="" type="text">
-        <input value="Submit" type="submit">
-    </form>
+<form name="input" action="StudentMenu.php" method="get"> Full
+name: <input name="student" value="Enter your name here" type="text">
+  <input value="Submit" type="submit"></form>
 </div>
+
+
 
 <h1> Teachers: </h1>
 
