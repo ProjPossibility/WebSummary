@@ -10,6 +10,12 @@
             body {background-image:url("Background.png");}
         </style>
     </head>
+	
+<?php
+	include ("functions.php");
+	createStory("$_POST[storyname]", "$_POST[story]");
+?>
+
     
     <body>
         <h1> Write New Story </h1>
@@ -21,6 +27,12 @@
         <h1> View Students </h1>
         
         <form name="input" action="" method="get">
+            <input value="View Students" type="submit">
+        </form>
+		
+		<h1> Logout </h1>
+		
+        <form name="input" action="Login.php" method="get">
             <input value="View Students" type="submit">
         </form>
         
