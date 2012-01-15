@@ -7,17 +7,18 @@ body {background-color:LightGrey;}
 #newstory {margin: auto;
 width:70%
 }
-
+//#input {color:rgb(255,0,0)'}
 </style>
 </head>
 
 <body>
-<h1>Fill in the blanks!</h1>
+<h1>Here's what you entered:</h1>
 <hr style="width: 100%; height: 2px;">
 <div id = "newstory">
 
-<form name = "FinalStory" action = "finalstory.php" method = "post">
+
 <?php
+
 $story = htmlspecialchars($_POST['story']);
 $test = explode("@", $story);
 
@@ -26,19 +27,11 @@ for($i = 0; $i < count($test); $i++)
 echo $test[$i];
 	if($i < count($test)-1)
 	{
-	echo "<input type = 'text' name = 'name";
-	echo $i;
-	echo "' />";
+	echo  $_POST["name$i"];;
 	}
 }
 
-echo '<input type="hidden" name="story" value="';
-echo $story;
-echo '" />';
-
 ?>
-<input type="submit" value="Submit" />
-</form>
 
 </div>
 
