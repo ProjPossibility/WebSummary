@@ -33,7 +33,7 @@
 		<h1> Logout </h1>
 		
         <form name="input" action="Login.php" method="get">
-            <input value="View Students" type="submit">
+            <input value="Logout" type="submit">
         </form>
         
     </body>
