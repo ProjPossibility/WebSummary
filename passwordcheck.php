@@ -1,7 +1,12 @@
 <html>
     
     <head>
-        
+        <style type="text/css">
+            body {
+                background-image:url("Background.png");
+                text-align: center;
+            }
+        </style>
     </head>
     
     <body>

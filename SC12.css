@@ -1,10 +1,10 @@
-body
-{
-background-color:LightGrey;
-}
 h1{ 
 text-align:center;
 }
 #Story{
 text-align:center;
+}
+body
+{
+background: url('Background.png') repeat;
 }
