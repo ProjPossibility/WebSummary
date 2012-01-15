@@ -5,9 +5,12 @@
 h1 {text-align: center;}
 body{
 	background:url('studentbackground.jpg');
-    background-repeat:no-repeat;
-    background-size:cover;
-	}
+	background-repeat:no-repeat;
+	background-size:cover;
+	text-align:center;
+	font-family:"Comic Sans", Comic Sans MS, cursive;
+	font-size: 20px;
+}
 #newstory {
 	margin: auto;
 	width:70%;
@@ -16,7 +19,7 @@ body{
 </head>
 
 <body>
-<h1>Here's what you entered:</h1>
+<h1>Here's your story!</h1>
 <hr style="width: 100%; height: 2px;">
 <div id = "newstory">
 

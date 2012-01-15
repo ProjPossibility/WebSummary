@@ -5,6 +5,7 @@
             body {
                 background-image:url("Background.png");
                 text-align: center;
+                font-size: 30px;
             }
         </style>
     </head>
