@@ -15,7 +15,7 @@
 
 <div id="logon">
 <form name="input" action="StudentMenu.php" method="get"> Full
-name: <input name="student" value="Enter your name here" type="text">
+name: <input name="student" type="text">
   <input value="Submit" type="submit"></form>
 </div>
 
