@@ -53,6 +53,9 @@ function generateSelect($name = '', $options = array()) {
 echo generateSelect('stories', $result);
 ?>
 <input type="Submit" value="GO">
+<input type="hidden" name="student" value="<?php
+	echo $_GET['student'];
+	?>">
 </p>
 </form>
 
