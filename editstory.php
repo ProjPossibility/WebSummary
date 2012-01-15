@@ -3,9 +3,14 @@
 
 <style type="text/css">
 h1 {text-align: center;}
-body {background-color:LightGrey;}
-#newstory {margin: auto;
-width:70%
+body {
+	background:url('studentbackground.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+	}
+#newstory {
+	margin: auto;
+	width:70%;
 }
 
 </style>
