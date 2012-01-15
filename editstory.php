@@ -46,10 +46,9 @@ echo '" />';
 
 ?>
 <input type="submit" value="Submit" />
-<<<<<<< HEAD
+
 <input type="hidden" name="student" value="<?php echo $_GET['student'];?>" />
-=======
->>>>>>> 6672a9824997201bd59ba6800aecff8c0e7505e7
+
 </form>
 
 </div>
