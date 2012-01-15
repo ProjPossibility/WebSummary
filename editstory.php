@@ -26,7 +26,7 @@ for($i = 0; $i < count($test); $i++)
 echo $test[$i];
 	if($i < count($test)-1)
 	{
-	echo "<input type = 'text'/>";
+	echo "<input type = 'text' name = 'name$i'/>";
 	}
 }
 ?>
