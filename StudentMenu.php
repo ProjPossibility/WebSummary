@@ -47,7 +47,7 @@ function generateSelect($name = '', $options = array()) {
 }
 ?>
 
-<form name="Menu" action = "editstory.php" method = "get">
+<form name="Menu" action="editstory.php" method="get">
 <p align="center">
 <?php
 echo generateSelect('stories', $result);
@@ -57,12 +57,18 @@ echo generateSelect('stories', $result);
 <input type="hidden" name="student" value="<?php
 			echo $_GET['student'];
 			?>">
+
+
 =======
 >>>>>>> 6672a9824997201bd59ba6800aecff8c0e7505e7
 </p>
 </form>
 
-
+<form name="logout" action="Login.php" method="get">
+<p align="center">
+<input type="Submit" value="Log Out">
+</p>
+</form>
 
 
 
