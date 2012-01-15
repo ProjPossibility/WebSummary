@@ -45,18 +45,6 @@ echo '" />';
 <input type="submit" value="Submit" />
 </form>
 
-<form name="menu" action="StudentMenu.php" method="get">
-<p align="center">
-<input type="Submit" value="Back to Menu">
-</p>
-</form>
-
-<form name="logout" action="Login.php" method="get">
-<p align="center">
-<input type="Submit" value="Log Out">
-</p>
-</form>
-
 </div>
 
 </body>
