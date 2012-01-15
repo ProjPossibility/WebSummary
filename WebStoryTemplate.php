@@ -10,6 +10,8 @@
 <div id = "Story" >
 <form name = "story" action = "editstory.php" method = "post">
 
+<input type = 'text' name = 'storyname' value = 'Story Title'/>
+<br/>
 <textarea name="story" rows="20" cols="80">
 </textarea><br/>
 
