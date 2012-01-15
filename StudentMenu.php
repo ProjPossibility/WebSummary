@@ -53,17 +53,16 @@ function generateSelect($name = '', $options = array()) {
 echo generateSelect('stories', $result);
 ?>
 <input type="Submit" value="GO">
+<<<<<<< HEAD
 <input type="hidden" name="student" value="<?php
 			echo $_GET['student'];
 			?>">
+=======
+>>>>>>> 6672a9824997201bd59ba6800aecff8c0e7505e7
 </p>
 </form>
 
-<form name="Logout" action="Login.php" method="get">
-<p align="center">
-<input type="Submit" value="Log Out">
-</p>
-</form>
+
 
 
 
