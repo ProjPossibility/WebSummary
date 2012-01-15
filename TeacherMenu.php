@@ -24,7 +24,7 @@
         
         <h1> View Students </h1>
         
-        <form name="input" action="" method="get">
+        <form name="input" action="ViewStudent.php" method="get">
             <input value="View Students" type="submit">
         </form>
 			
