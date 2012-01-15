@@ -32,15 +32,15 @@ function addStudent($student_name)
 
 //Title and text are self explanatory
 //certain categories will be built in
-function createStory($story_title, $story_text, $story_category)
+function createStory($story_title, $story_text)
 {
 	//we need to put story_text into the DB
 	//generate keys to differentiate story (autonumbering)
 	mysql_query("INSERT INTO stories (storyID, content)
 		VALUES ('$story_title', '$story_text')");
 		//if it doesnt work, take sing quotes of story title
-	mysql_query("INSERT INTO categories (categoryName, associatedStory)
-		VALUES ('$story_category', '$story_title' )");
+	//mysql_query("INSERT INTO categories (categoryName, associatedStory)
+		//VALUES ('$story_category', '$story_title' )");
 	
 }
 

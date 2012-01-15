@@ -57,12 +57,6 @@ echo generateSelect('stories', $result);
 			echo $_GET['student'];
 			?>">
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 6672a9824997201bd59ba6800aecff8c0e7505e7
-=======
->>>>>>> a6ebfd0bc12ffadda52c1bc544a3868dfa36ef1f
 </p>
 </form>
 

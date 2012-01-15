@@ -12,6 +12,10 @@
     </head>
     
     <body>
+	<?php
+	include ("functions.php");
+	createStory($_POST['storyname'], $_POST['story']);
+	?>
         <h1> Write New Story </h1>
         
         <form name="input" action="WebStoryTemplate.php" method="get">
@@ -23,6 +27,12 @@
         <form name="input" action="" method="get">
             <input value="View Students" type="submit">
         </form>
+			
+		<form name="logout" action = "Login.php" method = "get">
+			<p align="center">
+			<input type="Submit" value="Log Out">
+			</p>
+		</form>
         
     </body>
 </html>

@@ -8,7 +8,7 @@
 
 <hr style="width: 100%; height: 2px;">
 <div id = "Story" >
-<form name = "story" action = "editstory.php" method = "post">
+<form name = "story" action = "TeacherMenu.php" method = "post">
 
 <input type = 'text' name = 'storyname' value = 'Story Title'/>
 <br/>
