@@ -56,7 +56,11 @@ echo generateSelect('stories', $result);
 </p>
 </form>
 
-
+<form name="Logout" action="Login.php" method="get">
+<p align="center">
+<input type="Submit" value="Log Out">
+</p>
+</form>
 
 
 
