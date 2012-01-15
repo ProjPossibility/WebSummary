@@ -58,9 +58,9 @@ function getStory($story_id)
     echo "No rows found, nothing to print so am exiting";
     exit;
 	}
-
-	while ($row = mysql_fetch_assoc($result)) {
-		echo $row['content'];
+	return $result;
+	//while ($row = mysql_fetch_assoc($result)) {
+	//	echo $row['content'];
 		//remove echo and replace it with return so the other people can use this
 		
 	}
@@ -77,9 +77,9 @@ function getHistory($student_id)
 		$message .= 'Whole query: ' . $query;
 		die($message);
 	}
-
-	while ($row = mysql_fetch_assoc($result)) {
-		echo $row['storiesRead'];
+	return $result;
+	//while ($row = mysql_fetch_assoc($result)) {
+	//	echo $row['storiesRead'];
 		//remove echo and replace it with return so the other people can use this
 		
 	}
@@ -95,13 +95,19 @@ function displayCategories()
 		die($message);
 	}
 
-	while ($row = mysql_fetch_assoc($result)) {
-		echo $row['categoryName'];
+	return $result;
+	//while ($row = mysql_fetch_assoc($result)) {
+	//	echo $row['categoryName'];
 		//remove echo and replace it with return so the other people can use this
 		
 	}
 }
 
+function displayAllStories()
+{
+	$result = mysql_query("SELECT storyID FROM stories");
+	return $result;
+}
 
 function addNewCategory($title)
 {
