@@ -20,8 +20,9 @@ if (!$db_selected) {
 
 //at this point DB should be connected and usable
 
+	/*~~~REMEMBER TO ADD A GETSTUDENT AND GET STORIES BY CATEGORY FUNCTIONS~~~~*/
 
-
+//pass a student name, adds that student to database
 function addStudent($student_name)
 {
 		mysql_query("INSERT INTO students (name)
@@ -30,6 +31,8 @@ function addStudent($student_name)
 }
 
 
+//Title and text are self explanatory
+//certain categories will be built in
 function createStory($story_title, $story_text, $story_category)
 {
 	//we need to put story_text into the DB
@@ -42,7 +45,7 @@ function createStory($story_title, $story_text, $story_category)
 	
 }
 
-
+//story id refers to the title of the story
 function getStory($story_id)
 {
 	$result = mysql_query("SELECT content FROM stories WHERE storyID='$story_id'");
@@ -63,7 +66,9 @@ function getStory($story_id)
 	}
 }
 
-
+//THIS CURRENTLY PRINTS A LIST OF THE TITLES OF THE STORIES A STUDENT HAS COMPLETED
+//OUR INTENTION IS TO INSTEAD MAKE IT RETURN AN ARRAY OF TITLES
+//student_id refers to the student's name
 function getHistory($student_id)
 {
 	$result = mysql_query("SELECT storiesRead FROM students Where name='$student_id'");
@@ -80,6 +85,7 @@ function getHistory($student_id)
 	}
 }
 
+	//Does not return categories
 function displayCategories()
 {
 	$result = mysql_query("SELECT categoryName FROM categories");

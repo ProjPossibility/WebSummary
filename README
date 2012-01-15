@@ -13,3 +13,5 @@ Requirements
 
 http://us.php.net/ <-- this is the site that contains php info, libraries, etc.
 http://us.php.net/manual/en/getting-started.php <-- this has a beginning tutorial and such
+
+finalstory.php and editstory.php have the method for using hidden fields to pass data between webpages. We should use that method to save student and teacher logons.
