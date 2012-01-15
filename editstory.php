@@ -18,7 +18,7 @@ width:70%
 
 <form name = "FinalStory" action = "finalstory.php" method = "post">
 <?php
-$story = htmlspecialchars($_POST['story']);
+$story = htmlspecialchars($_GET['stories']);
 $test = explode("@", $story);
 
 for($i = 0; $i < count($test); $i++)
