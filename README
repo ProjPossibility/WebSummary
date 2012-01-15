@@ -15,3 +15,5 @@ http://us.php.net/ <-- this is the site that contains php info, libraries, etc.
 http://us.php.net/manual/en/getting-started.php <-- this has a beginning tutorial and such
 
 finalstory.php and editstory.php have the method for using hidden fields to pass data between webpages. We should use that method to save student and teacher logons.
+
+11:55 I linked the Login.php and StudentView.php files so that when you type in a student's name in Login and click submit it directs to StudentView. I also passed the student name string from the Login field to StudentView.php and saved it in $student so that now studentview can verify which student is logged in and plug the name into the right method. - Sam
