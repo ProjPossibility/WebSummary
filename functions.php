@@ -74,13 +74,35 @@ function getHistory($student_id)
 		$message .= 'Whole query: ' . $query;
 		die($message);
 	}
-	return $result;
-	//while ($row = mysql_fetch_assoc($result)) {
-	//	echo $row['storiesRead'];
-		//remove echo and replace it with return so the other people can use this}
-		
+	
+	while ($row = mysql_fetch_assoc($result)) {
+		echo $row['storiesRead'];
+		echo "\n";
 	
 }
+
+
+function listStudents()
+{
+	//return an array of students
+	$result = mysql_query("SELECT name FROM students");
+	while ($row = mysql_fetch_assoc($result)) {
+		echo $row['name'];
+		getHistory($row['name'];
+}
+		
+	//for all students
+	//echo array[0] ie output name
+	//echo getHistory(array[0] .. array[n]... ie output all stories read
+	
+	
+}
+
+
+
+
+
+
 
 	//Does not return categories
 function displayCategories()
@@ -115,6 +137,17 @@ function addNewCategory($title)
 {
 	mysql_query("INSERT INTO categories (categoryName)
 		VALUES ($title)");	
+}
+
+function getStudents()
+{
+	$resultList = array();
+	$result = mysql_query("SELECT name, content FROM students");
+	while($row = mysql_fetch_assoc($result))
+	{
+	$resultList[$row['name']] = $row['name'];
+	}
+	return $resultList;
 }
 
 
