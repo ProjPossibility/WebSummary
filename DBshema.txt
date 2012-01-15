@@ -1,0 +1,21 @@
+Name of the Database: webstories
+
+There are three tables you have to make.
+
+
+Table 1 name: categories
+2 columns:
+column 1: categoryName     type: varchar(50)
+column 2: associatedStory  type: varchar(20)
+
+
+
+Table 2 name: stories
+column 1: storyID          type: text
+column 2: content	   type: text
+
+
+
+Table 3 name: students
+column 1: name		   type: varchar(50)
+column 2: storiesRead      type: varchar(50)
