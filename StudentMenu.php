@@ -38,21 +38,21 @@ $result = displayAllStories();
 //if there is no time this list will be prepopulated
 function generateSelect($name = '', $options = array()) {
 	$html = '<select name="'.$name.'">';
-	foreach ($options as $value) 
+	foreach ($options as $option =>$value) 
 	{
-		$html .= '<option value='.$value.'>'.$value.'</option>';
+		$html .= '<option value="'.$value.'">'.$option.'</option>';
 	}
 	$html .= '</select>';
 	return $html;
 }
 ?>
 
-<form name="Menu" >
+<form name="Menu" action = "editstory.php" method = "get">
 <p align="center">
 <?php
 echo generateSelect('stories', $result);
 ?>
-<input type="Submit" onClick="getStory('document.Menu.stories.options[document.Menu.stories.selectedIndex].value;" action = "editstory.php" value="GO">
+<input type="Submit" value="GO">
 </p>
 </form>
 
