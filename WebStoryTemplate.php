@@ -8,17 +8,10 @@
 
 <hr style="width: 100%; height: 2px;">
 <div id = "Story" >
-<form name = "story" action = "Edit_Story.php" method = "get">
-<textarea rows="20" cols="80">
-</textarea><br/>
+<form name = "story" action = "editstory.php" method = "post">
 
-Choose from a Category: <select name="Pre-Category">
-<option value="loud">Loud</option>
-<option value="outdoor">Outdoor</option>
-<option value="school">Quiet</option>
-<option value="indoor">Indoor</option>
-<option value="birthday">Parties</option>
-</select>
+<textarea name="story" rows="20" cols="80">
+</textarea><br/>
 
 <input type="submit" value="Submit" />
 </form>
