@@ -47,29 +47,24 @@ function generateSelect($name = '', $options = array()) {
 }
 ?>
 
-<form name="Menu" action="editstory.php" method="get">
+<form name="Menu" action = "editstory.php" method = "get">
 <p align="center">
 <?php
 echo generateSelect('stories', $result);
 ?>
 <input type="Submit" value="GO">
-<<<<<<< HEAD
 <input type="hidden" name="student" value="<?php
 			echo $_GET['student'];
 			?>">
 
+<<<<<<< HEAD
 
 =======
 >>>>>>> 6672a9824997201bd59ba6800aecff8c0e7505e7
+=======
+>>>>>>> a6ebfd0bc12ffadda52c1bc544a3868dfa36ef1f
 </p>
 </form>
-
-<form name="logout" action="Login.php" method="get">
-<p align="center">
-<input type="Submit" value="Log Out">
-</p>
-</form>
-
 
 
 </body></html>

@@ -79,6 +79,7 @@ function getHistory($student_id)
 		echo $row['storiesRead'];
 		echo "\n";
 	
+	}
 }
 
 
@@ -88,15 +89,12 @@ function listStudents()
 	$result = mysql_query("SELECT name FROM students");
 	while ($row = mysql_fetch_assoc($result)) {
 		echo $row['name'];
-		getHistory($row['name'];
-}
-		
+		getHistory($row['name']);
+	}
+}		
 	//for all students
 	//echo array[0] ie output name
 	//echo getHistory(array[0] .. array[n]... ie output all stories read
-	
-	
-}
 
 
 
@@ -149,10 +147,6 @@ function getStudents()
 	}
 	return $resultList;
 }
-
-
-
-
 
 ?>
 
