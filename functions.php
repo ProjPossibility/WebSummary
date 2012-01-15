@@ -103,10 +103,10 @@ function displayCategories()
 function displayAllStories()
 {
 	$resultList = array();
-	$result = mysql_query("SELECT storyID FROM stories");
+	$result = mysql_query("SELECT storyID, content FROM stories");
 	while($row = mysql_fetch_assoc($result))
 	{
-	array_push($resultList, $row['storyID']);
+	$resultList[$row['storyID']] = $row['content'];
 	}
 	return $resultList;
 }

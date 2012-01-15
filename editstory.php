@@ -3,9 +3,14 @@
 
 <style type="text/css">
 h1 {text-align: center;}
-body {background-color:LightGrey;}
-#newstory {margin: auto;
-width:70%
+body {
+	background:url('studentbackground.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+	}
+#newstory {
+	margin: auto;
+	width:70%;
 }
 
 </style>
@@ -18,7 +23,7 @@ width:70%
 
 <form name = "FinalStory" action = "finalstory.php" method = "post">
 <?php
-$story = htmlspecialchars($_POST['story']);
+$story = htmlspecialchars($_GET['stories']);
 $test = explode("@", $story);
 
 for($i = 0; $i < count($test); $i++)

@@ -15,7 +15,7 @@
 
 <div id="logon">
 <form name="input" action="StudentMenu.php" method="get"> Full
-name: <input name="student" value="Enter your name here" type="text">
+name: <input name="student" type="text">
   <input value="Submit" type="submit"></form>
 </div>
 
@@ -26,7 +26,7 @@ name: <input name="student" value="Enter your name here" type="text">
 <div id="logon">
     
     <FORM ACTION="passwordcheck.php" METHOD=POST>
-        password: <INPUT TYPE="PASSWORD" NAME="mypassword">
+        Password: <INPUT TYPE="PASSWORD" NAME="mypassword">
         <INPUT TYPE=SUBMIT VALUE="submit">
     </FORM>
     
