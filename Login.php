@@ -10,13 +10,13 @@
 </head><body>
 <h1> Students: </h1>
 
-<form name="input" action="StudentView.php" method="get"> Full
-name: <input name="Name" value="Enter your name here" type="text"> <br>
+<form name="input" action="StudentMenu.php" method="get"> Full
+name: <input name="student" value="Enter your name here" type="text"> <br>
   <input value="Submit" type="submit"></form>
 
 <h1> Teachers: </h1>
 
-<form name="input" action="html_form_action.asp" method="get"> <input name="Password" value="Enter your password" type="text"> <br>
+<form name="input" action="html_form_action.asp" method="post"> <input name="Password" value="Enter your password" type="text"> <br>
   <input value="Submit" type="submit"></form>
 
 </body></html>

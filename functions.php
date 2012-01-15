@@ -27,7 +27,6 @@ function addStudent($student_name)
 {
 		mysql_query("INSERT INTO students (name)
 		VALUES ('$student_name')");
-
 }
 
 
@@ -61,9 +60,7 @@ function getStory($story_id)
 	return $result;
 	//while ($row = mysql_fetch_assoc($result)) {
 	//	echo $row['content'];
-		//remove echo and replace it with return so the other people can use this
-		
-	}
+		//remove echo and replace it with return so the other people can use this}
 }
 
 //THIS CURRENTLY PRINTS A LIST OF THE TITLES OF THE STORIES A STUDENT HAS COMPLETED
@@ -80,9 +77,9 @@ function getHistory($student_id)
 	return $result;
 	//while ($row = mysql_fetch_assoc($result)) {
 	//	echo $row['storiesRead'];
-		//remove echo and replace it with return so the other people can use this
+		//remove echo and replace it with return so the other people can use this}
 		
-	}
+	
 }
 
 	//Does not return categories
@@ -98,15 +95,20 @@ function displayCategories()
 	return $result;
 	//while ($row = mysql_fetch_assoc($result)) {
 	//	echo $row['categoryName'];
-		//remove echo and replace it with return so the other people can use this
+		//remove echo and replace it with return so the other people can use this}
 		
-	}
+	
 }
 
 function displayAllStories()
 {
+	$resultList = array();
 	$result = mysql_query("SELECT storyID FROM stories");
-	return $result;
+	while($row = mysql_fetch_assoc($result))
+	{
+	array_push($resultList, $row['storyID']);
+	}
+	return $resultList;
 }
 
 function addNewCategory($title)
